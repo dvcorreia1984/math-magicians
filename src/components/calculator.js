@@ -1,8 +1,8 @@
 import React from 'react';
+import './Calculator.css';
 
 const Calculator = () => (
-  <div>
-    <h1>0</h1>
+  <div id="wrapper">
     <button type="button">AC</button>
     <button type="button">+/-</button>
     <button type="button">%</button>
