@@ -3,6 +3,7 @@ import './Calculator.css';
 
 const Calculator = () => (
   <div id="wrapper">
+    <div id="display"><p>0</p></div>
     <div id="row">
       <button type="button">AC</button>
       <button type="button">+/-</button>
