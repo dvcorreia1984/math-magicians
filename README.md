@@ -6,7 +6,6 @@
 
   <br/>
 
-
 </div>
 
 # 📗 Table of Contents
@@ -38,9 +37,9 @@
 
 ### Key Features <a name="key-features">
 
-Some of the key features: 
-- Built using React
+Some of the key features:
 
+- Built using React
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,7 +91,6 @@ Must-Install-Project-with-the-Following-Programmes:
 
 - Npm start
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
@@ -106,7 +104,7 @@ Must-Install-Project-with-the-Following-Programmes:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - Adding more styling to CSS
-- Adding more functionality to the app 
+- Adding more functionality to the app
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
