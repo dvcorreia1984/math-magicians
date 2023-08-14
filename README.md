@@ -88,6 +88,11 @@ Must-Install-Project-with-the-Following-Programmes:
 - Node.js
 - npm install
 
+### Usage
+
+- Npm start
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
