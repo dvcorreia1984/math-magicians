@@ -46,7 +46,7 @@ p {
 }
 
 div#display {
-  height: 5vw;
+  height: 10vw;
   font-size: larger;
   display: flex;
   flex-direction: row-reverse;
