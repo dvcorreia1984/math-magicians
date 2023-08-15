@@ -1,39 +1,42 @@
 import React from 'react';
 import './Calculator.css';
+import Button from './Button';
 
-const Calculator = () => React.createElement('div', { id: 'wrapper' }, [
-  React.createElement('div', { id: 'display' }, [
-    React.createElement('p', {}, '0'),
-  ]),
-  React.createElement('div', { id: 'row' }, [
-    React.createElement('button', { type: 'button' }, 'AC'),
-    React.createElement('button', { type: 'button' }, '+/-'),
-    React.createElement('button', { type: 'button' }, '%'),
-    React.createElement('button', { id: 'orange', type: 'button' }, '÷'),
-  ]),
-  React.createElement('div', { id: 'row' }, [
-    React.createElement('button', { type: 'button' }, '7'),
-    React.createElement('button', { type: 'button' }, '8'),
-    React.createElement('button', { type: 'button' }, '9'),
-    React.createElement('button', { id: 'orange', type: 'button' }, 'x'),
-  ]),
-  React.createElement('div', { id: 'row' }, [
-    React.createElement('button', { type: 'button' }, '4'),
-    React.createElement('button', { type: 'button' }, '5'),
-    React.createElement('button', { type: 'button' }, '6'),
-    React.createElement('button', { id: 'orange', type: 'button' }, '-'),
-  ]),
-  React.createElement('div', { id: 'row' }, [
-    React.createElement('button', { type: 'button' }, '1'),
-    React.createElement('button', { type: 'button' }, '2'),
-    React.createElement('button', { type: 'button' }, '3'),
-    React.createElement('button', { id: 'orange', type: 'button' }, '+'),
-  ]),
-  React.createElement('div', { id: 'row' }, [
-    React.createElement('button', { id: 'zero', type: 'button' }, '0'),
-    React.createElement('button', { type: 'button' }, '.'),
-    React.createElement('button', { id: 'orange', type: 'button' }, '='),
-  ]),
-]);
+const Calculator = () => (
+  <div id="wrapper">
+    <div id="display">
+      <p>0</p>
+    </div>
+    <div id="row">
+      <Button htmlId="white" value="AC" />
+      <Button htmlId="white" value="+/-" />
+      <Button htmlId="white" value="%" />
+      <Button htmlId="orange" value="÷" />
+    </div>
+    <div id="row">
+      <Button htmlId="white" value="7" />
+      <Button htmlId="white" value="8" />
+      <Button htmlId="white" value="9" />
+      <Button htmlId="orange" value="x" />
+    </div>
+    <div id="row">
+      <Button htmlId="white" value="4" />
+      <Button htmlId="white" value="5" />
+      <Button htmlId="white" value="6" />
+      <Button htmlId="orange" value="-" />
+    </div>
+    <div id="row">
+      <Button htmlId="white" value="1" />
+      <Button htmlId="white" value="2" />
+      <Button htmlId="white" value="3" />
+      <Button htmlId="orange" value="+" />
+    </div>
+    <div id="row">
+      <Button htmlId="zero" value="0" />
+      <Button htmlId="white" value="." />
+      <Button htmlId="orange" value="=" />
+    </div>
+  </div>
+);
 
 export default Calculator;
