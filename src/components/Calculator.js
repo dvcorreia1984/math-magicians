@@ -1,42 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Calculator.css';
-import Button from './Button';
+import Button, { buttons } from './Button';
+import calculate from '../logic/calculate';
 
-const Calculator = () => (
-  <div id="wrapper">
-    <div id="display">
-      <p>0</p>
+const Calculator = () => {
+  const [calculatorData, setCalculatorData] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
+
+  const handleButtonClick = (value) => {
+    const newCalculatorData = calculate(calculatorData, value);
+    setCalculatorData(newCalculatorData);
+  };
+
+  const displayValue = calculatorData.next || calculatorData.total || '0';
+
+  return (
+    <div id="wrapper">
+      <div id="display">
+        <p>{displayValue}</p>
+      </div>
+      {buttons.map((button) => (
+        <Button
+          key={button.value}
+          htmlId={button.htmlId}
+          value={button.value}
+          onClick={handleButtonClick}
+        />
+      ))}
     </div>
-    <div id="row">
-      <Button htmlId="white" value="AC" />
-      <Button htmlId="white" value="+/-" />
-      <Button htmlId="white" value="%" />
-      <Button htmlId="orange" value="÷" />
-    </div>
-    <div id="row">
-      <Button htmlId="white" value="7" />
-      <Button htmlId="white" value="8" />
-      <Button htmlId="white" value="9" />
-      <Button htmlId="orange" value="x" />
-    </div>
-    <div id="row">
-      <Button htmlId="white" value="4" />
-      <Button htmlId="white" value="5" />
-      <Button htmlId="white" value="6" />
-      <Button htmlId="orange" value="-" />
-    </div>
-    <div id="row">
-      <Button htmlId="white" value="1" />
-      <Button htmlId="white" value="2" />
-      <Button htmlId="white" value="3" />
-      <Button htmlId="orange" value="+" />
-    </div>
-    <div id="row">
-      <Button htmlId="zero" value="0" />
-      <Button htmlId="white" value="." />
-      <Button htmlId="orange" value="=" />
-    </div>
-  </div>
-);
+  );
+};
 
 export default Calculator;
