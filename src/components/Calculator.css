@@ -41,6 +41,7 @@ p {
   align-items: center;
   justify-content: center;
   width: 40vw;
+  margin-left: 5vw;
 }
 
 div#display {
