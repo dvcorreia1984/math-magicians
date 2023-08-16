@@ -4,6 +4,7 @@ const Quote = () => {
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const category = 'dad';
@@ -11,15 +12,20 @@ const Quote = () => {
 
     const getQuote = async () => {
       try {
-        const response = await fetch(`https://api.api-ninjas.com/v1/quotes?category=${category}`, {
-          headers: {
-            'X-Api-Key': apiKey,
-            'Content-Type': 'application/json',
+        const response = await fetch(
+          `https://api.api-ninjas.com/v1/quotes?category=${category}`,
+          {
+            headers: {
+              'X-Api-Key': apiKey,
+              'Content-Type': 'application/json',
+            },
           },
-        });
+        );
 
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          setError('Network response was not ok');
+          setLoading(false);
+          return;
         }
 
         const data = await response.json();
@@ -30,9 +36,12 @@ const Quote = () => {
           setQuote(randomQuote.quote);
           setAuthor(randomQuote.author);
           setLoading(false);
+          setError(null);
         }
       } catch (error) {
-        console.error('Error fetching quote:', error);
+        setError('Error fetching quote');
+        setLoading(false);
+        throw new Error('Error fetching quote', error);
       }
     };
 
@@ -45,8 +54,18 @@ const Quote = () => {
         <p>Loading...</p>
       ) : (
         <>
-          <h3>{quote}</h3>
-          <h2>{author}</h2>
+          {error ? (
+            <p>
+              Error:
+              {' '}
+              {error}
+            </p>
+          ) : (
+            <>
+              <h3>{quote}</h3>
+              <h2>{author}</h2>
+            </>
+          )}
         </>
       )}
     </div>
