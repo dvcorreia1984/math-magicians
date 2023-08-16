@@ -3,7 +3,7 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  width: 15vw;
+  width: 10vw;
   height: 8vw;
   border: 1px solid lightgrey;
   background-color: #e0e0e0;
@@ -20,7 +20,6 @@ button {
 h1 {
   display: flex;
   height: 5vw;
-  width: 60vw;
   justify-content: center;
   align-items: center;
   background-color: white;
@@ -36,13 +35,12 @@ p {
 }
 
 #wrapper {
-  margin: 0 20vw 10vw;
-  width: 60vw;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 40vw;
 }
 
 div#display {
@@ -51,7 +49,7 @@ div#display {
   display: flex;
   flex-direction: row-reverse;
   color: white;
-  width: 100%;
+  width: 40vw;
   background-color: #858693;
 }
 
@@ -60,7 +58,7 @@ div#display {
 }
 
 #zero {
-  width: 30vw;
+  width: 20vw;
 }
 
 #orange {
@@ -75,4 +73,22 @@ div#display {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+div#main {
+  display: flex;
+}
+
+div#Quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  margin: 10vw;
+}
+
+div#quote {
+  font-family: 'Roboto', sans-serif;
+  background-color: #858693;
+  color: white;
 }
