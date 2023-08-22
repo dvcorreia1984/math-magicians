@@ -1,7 +1,3 @@
-body {
-  color: blue;
-}
-
 div#quote {
   display: flex;
   align-items: center;
