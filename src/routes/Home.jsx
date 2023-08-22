@@ -1,9 +1,9 @@
-import '../styles/home.css';
+import styles from '../styles/Home.module.css';
 
 const Home = () => (
-  <div>
+  <div className={styles.homeDiv}>
     <h2>Welcome to our Page!</h2>
-    <p>
+    <p className={styles.par}>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
       assumenda sunt omnis molestias tempora ad modi fuga provident magni! Omnis
       voluptas amet enim quo, incidunt sequi sapiente ducimus exercitationem
@@ -16,7 +16,7 @@ const Home = () => (
       harum.
     </p>
 
-    <p>
+    <p className={styles.par}>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
       assumenda sunt omnis molestias tempora ad modi fuga provident magni! Omnis
       voluptas amet enim quo, incidunt sequi sapiente ducimus exercitationem

@@ -1,12 +1,19 @@
 .navBar {
+  margin: 10vw 10vw 0 10vw;
   display: flex;
   gap: 3px;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  color: white;
 }
 
 .menu {
   display: flex;
   gap: 10px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
 }

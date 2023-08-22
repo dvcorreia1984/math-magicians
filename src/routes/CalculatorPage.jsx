@@ -1,9 +1,9 @@
 import Calculator from '../components/Calculator';
-import '../styles/calculator.css';
+import styles from '../styles/CalculatorPage.module.css';
 
 const CalculatorPage = () => (
-  <div id="calc">
-    <h2>Lets do some Math</h2>
+  <div className={styles.calc}>
+    <h2 className={styles.h2calc}>Lets do some Math!</h2>
     <Calculator />
   </div>
 );
