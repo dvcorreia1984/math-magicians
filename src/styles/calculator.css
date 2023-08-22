@@ -1,0 +1,4 @@
+div#calc {
+  display: flex;
+  flex-direction: row;
+}
