@@ -1,0 +1,12 @@
+.navBar {
+  display: flex;
+  gap: 3px;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+}
