@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import QuotePage from './routes/QuotePage';
