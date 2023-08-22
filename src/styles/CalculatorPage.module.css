@@ -1,0 +1,12 @@
+.calc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.h2calc {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+}
