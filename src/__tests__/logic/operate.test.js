@@ -1,7 +1,6 @@
 import operate from '../../logic/operate';
 
 describe('operate', () => {
-
   it('should correctly add', () => {
     const result = operate('1', '1', '+');
     expect(result).toEqual('2');
