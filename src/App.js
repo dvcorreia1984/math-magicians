@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Quote from './components/Quote';
+import QuotePage from './routes/QuotePage';
 import Home from './routes/Home';
 import CalculatorPage from './routes/CalculatorPage';
 
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/calculator" element={<CalculatorPage />} />
-        <Route path="/quote" element={<Quote />} />
+        <Route path="/quote" element={<QuotePage />} />
       </Routes>
     </BrowserRouter>
   );

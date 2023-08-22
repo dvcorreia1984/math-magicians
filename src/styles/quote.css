@@ -1,0 +1,12 @@
+body {
+  color: blue;
+}
+
+div#quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  flex-wrap: wrap;
+}
